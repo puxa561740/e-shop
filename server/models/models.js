@@ -69,13 +69,13 @@ const Type = sequelize.define('type', {
     autoIncrement: true
   },
   name: {
-    type: DataTypes.INTEGER, 
+    type: DataTypes.STRING, 
     unique: true,
     allowNull: false
   }
 })
 
-const Brand = sequelize.define('brand', {
+const Brand = sequelize.define('brand', { 
   id: {
     type: DataTypes.INTEGER, 
     primaryKey: true, 
@@ -156,7 +156,7 @@ module.exports = {
   Basket,
   BasketDevice,
   Device,
-  Type,
+  Type, 
   Brand,
   Rating,
   DeviceInfo,
